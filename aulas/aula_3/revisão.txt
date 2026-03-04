@@ -1,1 +1,82 @@
+Estrutura de Dados
 
+-Físicas: variáveis das linguagens de programação: int, float, char, srting, vetores, matrizes, ...
+-Abstratas: lista, pilha, fila, árvore, garfo
+    -Lista
+        -C++        - vector
+        -Java       - List, ArrayList, LinkedList
+        -C#         - List, ArrayList
+        -Python     - List
+    -Pilha
+    -Fila
+    -Arvore
+    -Garfo
+
+    -Algorítmos de gestão de memória: guardar/armazenar e buscar/pesquisar da melhor forma possível (eficiência)
+        -Operações Clássicas:
+            -Inserir
+                -C++        - push_back()
+                -Java       - add()
+                -C#         - Add()
+                -Python     - append()
+            -Remover pela posição ou pelo elemento
+                -C++        - pop_back() ou erase()
+                -Java       - remove()
+                -C#         - Remove()
+                -Python     - remove()
+            -Verificar tamanho da estrutura
+                -C++        - size()
+                -Java       - size()
+                -C#         - Cont
+                -Python     - len()
+            -Se está vazia
+                -se o tamanho for igual a 0
+                -empty() ou isEmpty()
+            -Localizar
+                vetor = [5, 9, 7, 2, 5]
+                TAM   = 5
+
+                - C
+                    numero = 5;
+                    encontrado = false;
+                    for(int i = 0; i < TAM; i++)
+                    {
+                        if(numero == vetor[i])
+                        {
+                            encontrado = true;
+                            break;
+                        }
+                    }
+                    
+                    if(encontrado)
+                    {
+                        print("Número encontrado.")
+                    }
+                    else
+                    {
+                        print("Número não encontrado.")
+                    }
+
+                - Python
+                    vetor = [5, 9, 7, 2, 5]
+                    numero = 5
+                    if numero in vetor
+                        print("Encontrado.")
+                    else
+                        print("Não encontrado.")
+
+                - Java
+                    vetor = [5, 9, 7, 2, 5];
+                    numero = 5;
+                    if (vetor.contains(numero)) {
+                        System.out.print("Encontrado.");
+                   }else{
+                        System.out.print("Não encontrado.");
+                   }
+
+                - C#
+                    vetor = [5, 9, 7, 2, 5];
+                    numero = 5;
+                    if(vetor.contains
+
+            
