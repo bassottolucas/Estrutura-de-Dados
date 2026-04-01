@@ -56,17 +56,26 @@ public class Mclima {
 
     // Método que identifica o ano com o maior valor (meses) no mapa
     private static String buscarMaior(Map<String, Integer> mapa) {
-        String melhorAno = "Nenhum";
+        String melhorAno = "";
         int max = -1;
 
-        // Itera sobre as entradas do mapa para encontrar o recordista
-        for (Map.Entry<String, Integer> entry : mapa.entrySet()) {
-            if (entry.getValue() > max) {
-                max = entry.getValue();
-                melhorAno = entry.getKey();
+        for (int valor : mapa.values()) {
+            if (valor > max) {
+                max = valor;
             }
         }
+
+        // Identifica quais anos atingiram esse valor máximo (trata empates)
+        for (Map.Entry<String, Integer> entry : mapa.entrySet()) {
+            if (entry.getValue() == max) {
+                if (!melhorAno.equals("")) melhorAno += ", ";
+                melhorAno += entry.getKey();
+            }
+        }
+
+        // Se o mapa estiver vazio ou não houver dados válidos
+        if (max == -1) return "Nenhum";
+
         return melhorAno + " (" + max + " meses)";
-    }
-    
-}
+        }
+    } 
