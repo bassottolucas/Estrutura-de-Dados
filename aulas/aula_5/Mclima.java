@@ -8,7 +8,7 @@ import java.util.Map;
 public class Mclima {
     public static void main(String[] args) {
         ArrayList<Clima> lista = new ArrayList<>();
-        String caminho = "Anotacao.txt";
+        String caminho = "base.csv";
 
         try (BufferedReader br = new BufferedReader(new FileReader(caminho))) {
             String linha;
